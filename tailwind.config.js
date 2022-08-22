@@ -4,6 +4,22 @@ module.exports = {
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    extend: {
+      
+      backgroundImage: {
+        'ice-cream': "url('/src/assets/img/glace.jpg')",
+        
+      },
+      colors: {
+        'regal-blue': '#5FE4ED',
+        'ice-pink':'#E2646A',
+      },
+
+      fontFamily: {
+        'Montserrat': ['Monserrat', 'sans-serif'] 
+      },
+    },
+
     screens: {
       sm: '640px',
       md: '768px',
@@ -346,6 +362,7 @@ module.exports = {
       0: '0',
       DEFAULT: '1',
     },
+    
     fontFamily: {
       sans: [
         'ui-sans-serif',
@@ -362,6 +379,7 @@ module.exports = {
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
+
       ],
       serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
