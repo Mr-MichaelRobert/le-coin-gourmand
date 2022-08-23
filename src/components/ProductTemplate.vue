@@ -27,10 +27,18 @@ export default {
 
   setup() {
     let Saveurs = [
-      { id: 1, name: "vanille", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
-      { id: 2, name: "chocolat", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
-      { id: 3, name: "choco-noisettes",link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla"},
+      { id: 1, name: "Vanille", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 2, name: "Chocolat", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 3, name: "Choco-Noisettes",link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla"},
       { id: 4, name: "Citron", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 5, name: "Pistache", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 6, name: "Fraise", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 7, name: "Framboise", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 8, name: "Melon", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 9, name: "Vanille Noire", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 10, name: "Coco", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 11, name: "Oreo", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+      { id: 12, name: "Nutella", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
     ];
     return { Saveurs };
   },

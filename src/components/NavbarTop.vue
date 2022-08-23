@@ -47,8 +47,8 @@ export default {
     let open = ref(false);
 
     let Links = [
-      { name: "Accueil", link: "accueil" },
-      { name: "Nos Goûts", link: "#" },
+      { name: "Bienvenu", link: "/" },
+      { name: "Commander", link: "nosgouts" },
       { name: "A Propos", link: "a_propos" },
       { name: "Contact", link: "#" },
     ];

@@ -3,6 +3,7 @@ import BienvenuView from '../views/BienvenuView.vue'
 import AccueilView from '../views/AccueilView.vue'
 import ConnexionView from '../views/ConnexionView.vue'
 import InscriptionView from '../views/InscriptionView.vue'
+import ChoiceView from '../views/ChoiceView.vue'
 
 const routes = [
   {
@@ -14,6 +15,11 @@ const routes = [
     path: '/accueil',
     name: 'accueil',
     component: AccueilView
+  },
+  {
+    path: '/nosgouts',
+    name: 'nosgouts',
+    component: ChoiceView
   },
   {
     path: '/inscription',

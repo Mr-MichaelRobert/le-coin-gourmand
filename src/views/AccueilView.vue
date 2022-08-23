@@ -37,7 +37,7 @@
 
     <div class="text_droite">
       <h3 class="p-4">Des aromes naturels, uniques.</h3>
-      <h3 class="p-4 mr-2">Un savoir faire perpétué depuis des générations..</h3>
+      <h3 class="p-4 mr-4">Un savoir faire perpétué depuis des générations..</h3>
       <h3 class="p-4">Alors, comment ne pas craquer ?</h3>
     </div>
   </div>
@@ -53,23 +53,10 @@ export default {
   components: {
     NavbarTop,
     ProductTemplate,
-  },
-//   setup() {
-//     let Saveurs = [
-//       { id: 1, name: "vanille", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
-//       { id: 2, name: "chocolat", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
-//       {id: 3, name: "choco-noisettes",link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla"},
-//       { id: 4, name: "Citron", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
-//     ];
-//     return { Saveurs };
-//   },
+  },    
  };
 </script>
 
-<!-- <style>
+<style>
 
-:root{
---main-bg-color: #F3F0BF;
-}
-
-</style> -->
+</style>
