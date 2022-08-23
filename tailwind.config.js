@@ -13,6 +13,8 @@ module.exports = {
       colors: {
         'regal-blue': '#5FE4ED',
         'ice-pink':'#E2646A',
+        'pink-cream':'#fda8f2',
+        'yellow-cream':'#fbf4b5',
       },
 
       fontFamily: {
@@ -210,6 +212,7 @@ module.exports = {
       '2xl': '1rem',
       '3xl': '1.5rem',
       full: '9999px',
+      ice: '40px',
     },
     borderSpacing: ({ theme }) => ({
       ...theme('spacing'),

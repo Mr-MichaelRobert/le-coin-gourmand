@@ -1,22 +1,18 @@
 <template>
-  <div class="" style="background-color:#F3F0BF;">
+  <div class="" style="background-color: #f3f0bf">
     <header>
-        <NavbarTop />
+      <NavbarTop />
     </header>
-<main class="text-center grid gap-4 grid-cols-4 grid-rows-3 p-10 mt:10"> 
-      <a href="#" class="flex items-center justify-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-        <img src="../assets/img/glace.png" alt="" style="width:65px; height:100px;" class="object-cover" >
-        <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{title}}</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> {{sub-title}}</p>
-        </div>
-      </a>
-</main>
-</div>
-  <div class="flex items-center justify-center ">
-    <!-- TACHE -->
-    <svg 
-      class = "absolute w-screen h-screen -z-10"
+
+    <main class="text-center grid gap-4 grid-cols-4 grid-rows-1 p-10 mt:10">
+      <ProductTemplate />
+    </main>
+
+  </div>
+
+  <div class="flex items-center justify-center">
+    <svg
+      class="absolute w-screen h-screen -z-10"
       viewBox="0 0 980 475"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -26,44 +22,48 @@
         fill="#F3F0BF"
       />
     </svg>
-
-    <!-- DESC -->
-    <!-- <h2 class="flex">Un coin de paradis pour les petits et les grands ..</h2> -->
   </div>
 
-
-<div class="flex w-full justify-center text-lg items-center">
-    <div class="text_gauche ">  <!-- TEXTE GAUCHE   -->
-      <h3 class="p-4">Une glace, tout simplement</h3>
-      <h3 class="p-4">Ingredient de qualité</h3>
+  <div class="flex w-full justify-center text-lg items-center">
+    <div class="text_gauche ">
+      <h3 class="p-4">Une bonne glace, tout simplement</h3>
+      <h3 class="p-4 ml-2">Des ingredient de qualités, Bio, certifié sans OGM.</h3>
+      <h3 class="p-4">On est les meiilleurs</h3>
     </div>
 
-    <div class="glace_centre">  <!-- IMAGE CENTRE   -->
-      <!-- PNG -->
+    <div class="glace_centre">
      <img src="../assets/img/glace.png" alt="" style="width:276px; height:473px;">
     </div>
 
-    <div class="text_droite">  <!-- TEXTE DROITE   -->
-      <h3 class="p-4">Une glace, tout simplement.</h3>
-      <h3 class="p-4">Ingredient de qualité</h3>
+    <div class="text_droite">
+      <h3 class="p-4">Des aromes naturels, uniques.</h3>
+      <h3 class="p-4 mr-2">Un savoir faire perpétué depuis des générations..</h3>
+      <h3 class="p-4">Alors, comment ne pas craquer ?</h3>
     </div>
   </div>
-
 
 </template>
 
 <script>
-// @ is an alias to /src
-import NavbarTop from '@/components/NavbarTop.vue'
+import NavbarTop from "@/components/NavbarTop.vue";
+import ProductTemplate from "@/components/ProductTemplate.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-
     NavbarTop,
-  }
-}
-
+    ProductTemplate,
+  },
+//   setup() {
+//     let Saveurs = [
+//       { id: 1, name: "vanille", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+//       { id: 2, name: "chocolat", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+//       {id: 3, name: "choco-noisettes",link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla"},
+//       { id: 4, name: "Citron", link: "@/assets/img/saveurs/cream-blue.jpg", description: "blablablabla" },
+//     ];
+//     return { Saveurs };
+//   },
+ };
 </script>
 
 <!-- <style>
@@ -73,4 +73,3 @@ export default {
 }
 
 </style> -->
-

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import BienvenuView from '../views/BienvenuView.vue'
 import AccueilView from '../views/AccueilView.vue'
 import ConnexionView from '../views/ConnexionView.vue'
+import InscriptionView from '../views/InscriptionView.vue'
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: '/accueil',
     name: 'accueil',
     component: AccueilView
+  },
+  {
+    path: '/inscription',
+    name: 'inscription',
+    component: InscriptionView
   },
   {
     path: '/connexion',
@@ -35,3 +41,5 @@ const router = createRouter({
 })
 
 export default router
+
+
