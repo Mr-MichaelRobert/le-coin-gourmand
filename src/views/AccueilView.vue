@@ -32,7 +32,7 @@
     </div>
 
     <div class="glace_centre">
-     <img src="../assets/img/glace.png" alt="" style="width:276px; height:473px;">
+     <img src="@/assets/img/yug.png" alt="" style="width:276px; height:473px;">
     </div>
 
     <div class="text_droite">

@@ -13,12 +13,15 @@ module.exports = {
       colors: {
         'regal-blue': '#5FE4ED',
         'ice-pink':'#E2646A',
+        'blue-cream':'#5FE4ED',
         'pink-cream':'#fda8f2',
         'yellow-cream':'#fbf4b5',
+        'purple-cream':'#380075',
+        'orange-cream':'#ff6d59',
       },
 
       fontFamily: {
-        'Montserrat': ['Monserrat', 'sans-serif'] 
+        'Modak': ['Modak-Regular', 'cursive'] 
       },
     },
 
@@ -29,6 +32,7 @@ module.exports = {
       xl: '1280px',
       '2xl': '1536px',
     },
+
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
@@ -306,7 +310,7 @@ module.exports = {
     fill: ({ theme }) => theme('colors'),
     grayscale: {
       0: '0',
-      DEFAULT: '100%',
+      DEFAULT: '50%',
     },
     hueRotate: {
       0: '0deg',

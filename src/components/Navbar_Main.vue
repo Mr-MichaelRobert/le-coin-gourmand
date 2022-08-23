@@ -1,70 +1,61 @@
 <template>
   <nav
-    class="bg-ice-pink text-gray-100 py-3.5 px-6 shadow md:flex justify-between items-center"
+    class="bg-pink-cream text-yellow-cream font-black font-Modak py-3.5 px-6 shadow-lg flex justify-between"
   >
-    <div class="flex items-center">
-      
-      <span class="mr-5 rounded-full	p-1 hover:rotate-12 bg-white ">
-       <img src="../assets/img/glace.png" alt="" style="width:35px; height:40px;" object-cover >
-      </span>
-      <h1 class="text-3xl">Le Coin Gourmand</h1>
+
+
+    <Logoname_Navbar class="lg:self-start"/>
+
+    <div
+      @click="MenuOuvrir()"
+      class="  grayscale hover:grayscale-0 absolute lg:hidden right-6 top-4 cursor-pointer text-6xl"
+    >
+      <i :class="[ouvrir ? 'bi bi-x' : 'bi bi-filter-left']"></i>
     </div>
 
-    <span @click="MenuOpen()" class="absolute md:hidden right-6 top-1.5 cursor-pointer text-4xl">
-      <i :class="[open ? 'bi bi-x' : 'bi bi-filter-left']"></i>
-    </span>
-
     <ul
-      class="md:flex md:item-center md:px-0 px-10 md:pb-0 pb-10 md:static absolute bg-ice-pink md:w-auto w-full top-14 duration-700 ease-in items-center align-center"
-      :class="[open ? 'left-0' : 'left-[-100%]']"
+      class="lg:flex lg:item-center md:px-0 px-10 lg:pb-0 pb-10 lg:static absolute bg-pink-cream opacity-75 lg:w-auto w-full top-20 duration-700 ease-in items-center align-center"
+      :class="[ouvrir ? 'left-0' : 'left-[-100%]']"
     >
       <li
-        class="md:mx-4 md:my-0 my-6"
-        v-for="link in Links"
-        v-bind:key="link.name"
+        class="lg:mx-3 lg:my-0 my-6"
+        v-for="lien in Liens"
+        v-bind:key="lien.name"
       >
-        <a :href="link.link" class="text-xl hover:text-sky-300 align-middle">{{
-          link.name
-        }}</a>
+        <a
+          :href="lien.link"
+          class="text-xl hover:text-purple-cream align-middle"
+          >{{ lien.name }}</a
+        >
       </li>
-      <ButtonNavbar><a href="connexion">Connexion</a></ButtonNavbar>
-      <ButtonNavbar>Panier</ButtonNavbar>
+    <Button_Navbar>Commander</Button_Navbar>
     </ul>
+
   </nav>
-  
 </template>
 
 <script>
 import { ref } from "@vue/reactivity";
-import ButtonNavbar from "./ButtonNavbar.vue";
+
+import Logoname_Navbar from "./logos/logo_navbar/Logoname_Navbar.vue";
+import Button_Navbar from "./buttons/Button_Navbar.vue";
 
 export default {
-  components: {
-    ButtonNavbar,
-  },
-
+  components: { Logoname_Navbar, Button_Navbar },
   setup() {
-    let open = ref(false);
-
-    let Links = [
-      { name: "Bienvenu", link: "/" },
-      { name: "Accueil", link: "/accueil" },
-      { name: "Nos Goûts", link: "/nosgouts" },
-      { name: "A propos", link: "/a_propos" },
-      { name: "Inscription", link: "/inscription" },
-      { name: "Connexion", link: "/connexion" },
+    let ouvrir = ref(false);
+    let Liens = [
+      { name: "BIENVENU", link: "/" },
+      { name: "ACCUEIL", link: "/accueil" },
+      { name: "SAVEURS", link: "/nosgouts" },
+      { name: "CONTACT", link: "/a_propos" },
     ];
-
-    function MenuOpen() {
-      open.value = !open.value;
+    function MenuOuvrir() {
+      ouvrir.value = !ouvrir.value;
     }
-
-    return { Links, open, MenuOpen };
+    return { Liens, ouvrir, MenuOuvrir };
   },
-
 };
-
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

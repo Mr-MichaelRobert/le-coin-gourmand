@@ -5,7 +5,7 @@
     <div class="flex items-center">
       
       <span class="mr-5 rounded-full	p-1 hover:rotate-12 bg-white ">
-       <img src="../assets/img/glace.png" alt="" style="width:35px; height:40px;" object-cover >
+       <img src="@/assets/img/yug.png" alt="" style="width:35px; height:40px;" object-cover >
       </span>
       <h1 class="text-3xl">Le Coin Gourmand</h1>
     </div>
@@ -47,7 +47,7 @@ export default {
     let open = ref(false);
 
     let Links = [
-      { name: "Bienvenu", link: "/" },
+      { name: "Bienvenue", link: "/" },
       { name: "Commander", link: "nosgouts" },
       { name: "A Propos", link: "a_propos" },
       { name: "Contact", link: "#" },

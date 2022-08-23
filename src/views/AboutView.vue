@@ -20,8 +20,8 @@
     </svg>
   </div>
 
-  <div class="mt-20" style="width: 80%;">
-    <span>
+  <div class="flex items-center justify-center" style="width: 80%; height:40%;">
+    <span class="absolute" style="margin-left:20%; margin-top:50%">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in elit ligula. Proin vulputate dictum laoreet. Sed eleifend nec nisi sit amet placerat. Donec semper massa a magna rutrum mattis. Maecenas pharetra leo id dolor semper, at fringilla lacus aliquam. Morbi finibus nulla id ante cursus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer dapibus tellus ante, eu lobortis dui fringilla sit amet. Nulla velit lorem, ornare ultrices suscipit ac, laoreet quis ligula. Proin auctor, nunc ac ultricies pellentesque, enim lectus mollis mi, sit amet tempor sapien arcu eget tellus.
 
       Maecenas elementum libero vitae ligula fermentum scelerisque. Maecenas at lectus vel massa placerat fringilla. In odio nisl, rutrum non sagittis id, tristique eget ante. Vivamus tempor massa quis ligula eleifend, vitae eleifend odio dictum. Maecenas tincidunt leo ut sem fermentum, eu laoreet lacus ornare. Pellentesque convallis porttitor enim, a tempus tellus dignissim sit amet. Nunc tincidunt diam sed molestie viverra. Donec et felis porttitor, viverra odio id, ultricies felis. Nulla faucibus tellus eros, a mattis lectus egestas sed. Donec eu feugiat urna. Fusce finibus nunc sit amet erat consequat cursus. Aenean sit amet enim nec tellus porta mattis. Phasellus venenatis ante at blandit tempor. Aliquam erat volutpat. Maecenas facilisis orci mi, in congue odio rhoncus ac. In hendrerit mi posuere, tempus nisl vel, scelerisque ipsum.

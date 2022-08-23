@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import BienvenuView from '../views/BienvenuView.vue'
 import AccueilView from '../views/AccueilView.vue'
+import AccueilView2 from '../views/AccueilView2.vue'
 import ConnexionView from '../views/ConnexionView.vue'
 import InscriptionView from '../views/InscriptionView.vue'
 import ChoiceView from '../views/ChoiceView.vue'
@@ -15,6 +16,11 @@ const routes = [
     path: '/accueil',
     name: 'accueil',
     component: AccueilView
+  },
+  {
+    path: '/accueil2',
+    name: 'accueil2',
+    component: AccueilView2
   },
   {
     path: '/nosgouts',
